@@ -75,10 +75,11 @@ gpg --export -a "사용자 이메일" > public_key.asc
 
 # 비밀키 내보내기
 gpg --list-secret-keys
-gpg --export-secret-keys -a "사용자 이메일" > private_key.asc
+sudo gpg --export-secret-keys -a "사용자 이메일" > private_key.asc
 
 # 비밀키 암호화
-gpg --symmetric --cipher-algo AES256 private_key.asc
+# 암호화를 하면 private_key.asc.gpg 파일이 생성된다.
+sudo gpg --symmetric --cipher-algo AES256 private_key.asc
 
 ```
 
