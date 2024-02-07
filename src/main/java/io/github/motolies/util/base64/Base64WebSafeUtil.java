@@ -6,6 +6,10 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
+
+/**
+ * The type Base 64 web safe util.
+ */
 public class Base64WebSafeUtil {
 
     private static final Base64.Encoder bEncode = java.util.Base64.getEncoder();
