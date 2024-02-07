@@ -18,7 +18,8 @@ public class Base64WebSafeUtil {
      * String to WebSafe Base64 String
      *
      * @param message String
-     * @return byte[]
+     * @return byte[] string
+     * @throws UnsupportedEncodingException the unsupported encoding exception
      */
     public static String encode(String message) throws UnsupportedEncodingException {
         return encode(message.getBytes(StandardCharsets.UTF_8));
