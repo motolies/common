@@ -37,8 +37,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<!--        <gpg.keyname>${env.GPG_KEY_NAME}</gpg.keyname>-->
-<!--        <gpg.passphrase>1234</gpg.passphrase>-->
     </properties>
 
     <dependencies>
@@ -118,17 +116,5 @@
             </plugin>
         </plugins>
     </build>
-
-<!--    <distributionManagement>-->
-<!--        <snapshotRepository>-->
-<!--            <id>maven-central-snapshots</id>-->
-<!--            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>-->
-<!--        </snapshotRepository>-->
-<!--        <repository>-->
-<!--            <id>maven-central-release</id>-->
-<!--            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
-<!--        </repository>-->
-<!--    </distributionManagement>-->
-
 
 </project>

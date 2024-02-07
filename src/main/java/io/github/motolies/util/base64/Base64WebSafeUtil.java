@@ -2,7 +2,6 @@ package io.github.motolies.util.base64;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
@@ -19,9 +18,8 @@ public class Base64WebSafeUtil {
      *
      * @param message String
      * @return byte[] string
-     * @throws UnsupportedEncodingException the unsupported encoding exception
      */
-    public static String encode(String message) throws UnsupportedEncodingException {
+    public static String encode(String message) {
         return encode(message.getBytes(StandardCharsets.UTF_8));
     }
 
