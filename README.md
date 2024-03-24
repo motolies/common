@@ -21,9 +21,9 @@ mvn install:install-file \
 인텔리제이에서는 아래와 같이 설정합니다. 
 ```bash
 # COMMON_VERSION=0.0.6 
-clean package install:install-file -Dfile=./target/common-0.0.2.jar -DgroupId=io.github.motolies -DartifactId=common -Dversion=${COMMON_VERSION} -Dpackaging=jar
+clean package install:install-file -Dfile=./target/common-${COMMON_VERSION}.jar -DgroupId=io.github.motolies -DartifactId=common -Dversion=${COMMON_VERSION} -Dpackaging=jar
 ```
-![IntelliJ](./image/intellij_local_build.png)
+![IntelliJ](./image/intellij_local_build_setting.png)
 
 
 그런 다음 아래의 의존성을 추가하여 사용할 수 있습니다.
